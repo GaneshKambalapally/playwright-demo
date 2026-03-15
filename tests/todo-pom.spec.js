@@ -56,10 +56,10 @@ test.describe('Todo App — POM Tests', () => {
     await expect(page.getByText('Done task')).toBeVisible();
     await expect(page.getByText('Pending task')).toBeHidden();
   });
-    test('INTENTIONAL FAIL — delete after testing', async ({ page }) => {
-    await todoPage.goto();
-    // This will fail — wrong text
-    await expect(page.getByText('This text does not exist')).toBeVisible();
-  });
+//     test('INTENTIONAL FAIL — delete after testing', async ({ page }) => {
+//     await todoPage.goto();
+//     // This will fail — wrong text
+//     await expect(page.getByText('This text does not exist')).toBeVisible();
+//   });
 
 });
