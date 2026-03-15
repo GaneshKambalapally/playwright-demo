@@ -55,6 +55,7 @@ test.describe('Todo App — POM Tests', () => {
 
     await expect(page.getByText('Done task')).toBeVisible();
     await expect(page.getByText('Pending task')).toBeHidden();
+    console.log('Test CI CD')
   });
 //     test('INTENTIONAL FAIL — delete after testing', async ({ page }) => {
 //     await todoPage.goto();
